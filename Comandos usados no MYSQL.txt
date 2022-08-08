@@ -1,0 +1,15 @@
+comando usados nesse Projeto MYSQL
+
+Foi aberto o terminal MYSQl 8.0 Command Line Cliente - Unicode
+
+create database; -> criando database
+
+use eventosapp; -> usar o evendosapp
+
+show tables;  -> mostrar as tabelas 
+
+describle evento; -> usado para mostrar os dados do banco de dados criados no projeto
+
+select * from evento; -> depois de cadastrar no site , usa esse comando para ver se foi inserido no DB os dados
+
+select * from convidado -> depois de criar a lista de convidados usa esse comando pra ver se salvou no DB
