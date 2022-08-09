@@ -26,6 +26,9 @@
 			  </nav>
 		</header>
 
+		</form>
+		</form>
+
 	<div th:each="evento : ${evento}" class="container detalhesEvento">
 	<h5>Detalhes do Evento</h5>
 		<div class="row">
@@ -42,7 +45,9 @@
 				Nome: <input type="text" value="" name="nomeConvidado" placeholder="Nome Completo"/>
 				RG: <input type="text" value="" name="rg"placeholder="AA-00.000.000" class="validate"/>
 				<button class="waves-effect waves-light btn" type="submit">Adicionar</button>
+
 			</form>
+
 		</div>
 
 	<table class="container tabelaConvidado">

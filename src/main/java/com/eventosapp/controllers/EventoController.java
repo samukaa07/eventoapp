@@ -67,6 +67,15 @@ public class EventoController {
 
 	}
 
+	// Formulario edição evento
+    @RequestMapping(value = "/editar-evento", method = RequestMethod.GET)
+    public ModelAndView editarEvent(long codigo) {
+        Evento evento = er.findByCodigo(codigo);
+        ModelAndView mv = new ModelAndView("evento/update-evento");
+        mv.addObject("evento", evento);
+        return mv;
+    }
+
 	//{ aqui dentro ele vai retornar o codigo de cada evento, qd cliente clicar no evento vai redirecionar para o codigo e mostra os detlahes}
 	// criar um método para receber via post esse formulario
 	@RequestMapping(value="/{codigo}", method=RequestMethod.GET)
